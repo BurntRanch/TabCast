@@ -1,0 +1,8 @@
+[package]
+name = "TabCast"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+adw = { version = "0.7.2", package = "libadwaita", features = ["v1_5"] }
+gtk4 = "0.9.6"
