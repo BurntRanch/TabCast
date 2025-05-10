@@ -21,7 +21,7 @@ fn main() {
             .expect("Couldn't build device-list.");
 
         /* Why tf does gtk-rs not just have "get_child(idx)"?? Why do I need to get dora the explorer to find a single child??? */
-        device_list.connect_row_activated(|_, list_box_row| { println!("Row {} activated!", list_box_row.child().unwrap().first_child().unwrap().next_sibling().unwrap().property_value("label").get::<String>().unwrap()) });
+        device_list.connect_row_activated(|_, list_box_row| { println!("Row #{} activated!", list_box_row.index()) });
 
         window.present();
     });
