@@ -1,3 +1,4 @@
+use adw::glib::property::PropertyGet;
 use adw::prelude::*;
 use adw::Application;
 use gtk4::Builder;
@@ -15,10 +16,12 @@ fn main() {
             .expect("Couldn't build window.");
         window.set_application(Some(app));
 
-        let testbutton = builder
-            .object::<gtk4::Button>("test-button")
-            .expect("Couldn't build test-button.");
-        testbutton.connect_clicked(|_| { println!("Clicked!") });
+        let device_list = builder
+            .object::<gtk4::ListBox>("device-list")
+            .expect("Couldn't build device-list.");
+
+        /* Why tf does gtk-rs not just have "get_child(idx)"?? Why do I need to get dora the explorer to find a single child??? */
+        device_list.connect_row_activated(|_, list_box_row| { println!("Row {} activated!", list_box_row.child().unwrap().first_child().unwrap().next_sibling().unwrap().property_value("label").get::<String>().unwrap()) });
 
         window.present();
     });

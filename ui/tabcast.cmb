@@ -2,5 +2,5 @@
 <!DOCTYPE cambalache-project SYSTEM "cambalache-project.dtd">
 <!-- Created with Cambalache 0.96.0 -->
 <cambalache-project version="0.96.0" target_tk="gtk-4.0">
-  <ui filename="tabcast.ui" sha256="f810db54752ed4a97bce2cf79f61fa6943ab3624a2c097d83a91b15e32833b2b"/>
+  <ui filename="tabcast.ui" sha256="a1d8e891fa8660a0eb969d6f23ba5d86cb3b223e51a7e0c31b623f5dba1b5f5c"/>
 </cambalache-project>
