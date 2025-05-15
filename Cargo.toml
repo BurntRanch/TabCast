@@ -5,8 +5,16 @@ edition = "2024"
 
 [dependencies]
 adw = { version = "0.7.2", package = "libadwaita", features = ["v1_5"] }
+anyhow = "1.0.98"
 async-channel = "2.3.1"
+derive_more = { version = "2.0.1", features = ["full"] }
 features = "0.10.0"
 full = "0.3.0"
+glib = "0.20.10"
+gstreamer-app = "0.23.5"
+gstreamer-rtsp = "0.23.5"
+gstreamer-rtsp-server = "0.23.5"
 gtk4 = "0.9.6"
+pipewire = "0.8.0"
+portal-screencast = "0.1.0"
 tokio = { version = "1.45.0", features = ["full"] }

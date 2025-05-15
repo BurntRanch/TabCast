@@ -1,0 +1,41 @@
+   Compiling TabCast v0.1.0 (/mnt/secondary_drive/projects/TabCast)
+warning: unused import: `adw::glib::property::PropertyGet`
+ --> src/main.rs:9:5
+  |
+9 | use adw::glib::property::PropertyGet;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` on by default
+
+warning: unused import: `gstreamer_rtsp::RTSPUrl`
+  --> src/main.rs:12:5
+   |
+12 | use gstreamer_rtsp::RTSPUrl;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `gstreamer_rtsp_server::RTSPMedia`
+  --> src/main.rs:17:5
+   |
+17 | use gstreamer_rtsp_server::RTSPMedia;
+   |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `anyhow::Error`
+  --> src/main.rs:21:5
+   |
+21 | use anyhow::Error;
+   |     ^^^^^^^^^^^^^
+
+warning: unused imports: `context`, `core`, `main_loop`, and `stream`
+  --> src/main.rs:27:28
+   |
+27 | use pipewire::{self as pw, context, core, main_loop, stream};
+   |                            ^^^^^^^  ^^^^  ^^^^^^^^^  ^^^^^^
+
+warning: unused variable: `id`
+   --> src/main.rs:290:9
+    |
+290 |     let id = rtsp_server.attach(None);
+    |         ^^ help: if this is intentional, prefix it with an underscore: `_id`
+    |
+    = note: `#[warn(unused_variables)]` on by default
+
